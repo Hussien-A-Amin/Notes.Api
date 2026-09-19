@@ -23,7 +23,7 @@ public partial class AuthController
     TokenResponse GetTokenResponse()
     {
         var ExpiresAt = DateTime.Now.AddMinutes(10);
-        ///
+       
         var clms = new List<Claim>()
             {
                 new ("BonusRole","BonusManager"),
